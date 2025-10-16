@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Nacionalidade;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -23,7 +24,11 @@ class DatabaseSeeder extends Seeder
 
            $this->call([
                 GeneroSeeder::class,
+                NacionalidadesSeeder::class,
+                GeneroSeeder::class,
                 AtorSeeder::class,
+                DiretoresSeeder::class,
+                ProdutorasSeeder::class
            ]);
     }
 }

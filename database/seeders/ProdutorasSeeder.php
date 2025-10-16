@@ -6,20 +6,20 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class GeneroSeeder extends Seeder
+class ProdutorasSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::table('generos')->insert(
+        DB::table('produtoras')->insert(
             [
-                ['nome' => "Terror"],
-                ['nome' => "Ação"],
-                ['nome' => "Comédia"],
-                ['nome' => "Romance"],
-                ['nome' => "Suspense"],
+                ['nome' => "Nacional Filmes"],
+                ['nome' => "Warnerbros"],
+                ['nome' => "TNT Movies"],
+                ['nome' => "Movie Plus"],
+                ['nome' => "Max"],
             ]
         );
     }
