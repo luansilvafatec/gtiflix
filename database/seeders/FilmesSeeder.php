@@ -24,6 +24,10 @@ class FilmesSeeder extends Seeder
                     'nome' => "Transformers",
                     'descricao' => "Robôs brigando",
                 ],
+                [
+                    'nome' => "Interestellar",
+                    'descricao' => "viagem espacial",
+                ],
             ]
         );
     }

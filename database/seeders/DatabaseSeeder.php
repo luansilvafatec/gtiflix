@@ -28,7 +28,8 @@ class DatabaseSeeder extends Seeder
                 GeneroSeeder::class,
                 AtorSeeder::class,
                 DiretoresSeeder::class,
-                ProdutorasSeeder::class
+                ProdutorasSeeder::class,
+                FilmesSeeder::class,
            ]);
     }
 }

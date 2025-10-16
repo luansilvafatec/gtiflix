@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Ator;
+use App\Models\Filme;
 use App\Models\Genero;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,7 @@ Route::get('/filmes/{filme}', function($filme) {
 Route::view('/conheca', 'sobre');
 
 
+
 Route::get('/generos', function() {
     $minhaVariavel = Genero::all();
     dd($minhaVariavel);
@@ -28,3 +30,11 @@ Route::get('/atores', function() {
     $minhaNovaVariavel = Ator::all();
     dd($minhaNovaVariavel);
 });
+
+Route::get('/lista-filmes', function() {
+    $filmes = Filme::all();
+    return view('lista-filmes',
+        compact('filmes'));
+});
+
+
